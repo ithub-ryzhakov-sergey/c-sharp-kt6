@@ -79,6 +79,12 @@
 - T4.2_RectangleOps (*)
   - Структура Rect(w,h). Функции: TotalArea(Rect[]), BiggestPerimeter(Rect[]), Validate(Rect) — стороны > 0. При наличии невалидных элементов — ArgumentException.
 
+  - Уточнения после решения:
+  - Конструктор Rect обязан валидировать аргументы и бросать ArgumentOutOfRangeException, если width <= 0 или height <= 0.
+  - Validate(rect) возвращает true только если обе стороны > 0.
+  - TotalArea(rects): при null — ArgumentNullException; при наличии невалидного элемента — ArgumentException.
+  - BiggestPerimeter(rects): при null — ArgumentNullException; при пустом массиве — InvalidOperationException; при наличии невалидного элемента — ArgumentException.
+  - Важно: если попытаться создать невалидный Rect прямо в массиве (например, new Rect(0, 2)), исключение будет выброшено конструктором ещё до вызова функций. Это ожидаемое поведение при строгой валидации конструктора.
 ---
 
 Тема 5: Перечисления
