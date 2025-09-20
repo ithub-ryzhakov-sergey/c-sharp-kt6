@@ -9,7 +9,7 @@ public readonly struct Rect
     public int Height { get; }
     public Rect(int width, int height)
     {
-        // Требуется: width > 0, height > 0
+        // Требуется: width >= 0, height >= 0
         throw new NotImplementedException();
     }
 
