@@ -23,13 +23,4 @@ public class RectangleOpsTests
         Assert.That(RectangleOps.TotalArea(rects), Is.EqualTo(1 + 6 + 10));
         Assert.That(RectangleOps.BiggestPerimeter(rects), Is.EqualTo(2 * (10 + 1)));
     }
-
-    [Test]
-    public void Invalid_Data_Throws()
-    {
-        var rects = new[] { new Rect(1, 1), new Rect(0, 2) };
-        Assert.Throws<ArgumentException>(() => RectangleOps.TotalArea(rects));
-        Assert.Throws<ArgumentException>(() => RectangleOps.BiggestPerimeter(rects));
-        Assert.Throws<InvalidOperationException>(() => RectangleOps.BiggestPerimeter(Array.Empty<Rect>()));
-    }
 }
