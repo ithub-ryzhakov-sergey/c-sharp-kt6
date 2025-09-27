@@ -54,9 +54,9 @@
   2. Создайте `public` автосвойства `double X { get; }` и `double Y { get; }`.
   3. Создайте `public` конструктор `Point2D(double x, double y)`, который инициализирует `X` и `Y`.
   4. Создайте `public` свойство `double Length`, которое вычисляет длину вектора от `(0,0)` до `(X,Y)`.
-  5. Создайте `public` метод `Point2D Add(in Point2D other)`, который возвращает новую точку, являющуюся суммой текущей и `other`.
-  6. Создайте `public` метод `Point2D Subtract(in Point2D other)`, который возвращает разность.
-  7. Создайте `public` метод `double DistanceTo(in Point2D other)`, который вычисляет расстояние до `other`.
+  5. Создайте `public` метод `Point2D Add(Point2D other)`, который возвращает новую точку, являющуюся суммой текущей и `other`.
+  6. Создайте `public` метод `Point2D Subtract(Point2D other)`, который возвращает разность.
+  7. Создайте `public` метод `double DistanceTo(Point2D other)`, который вычисляет расстояние до `other`.
   8. Переопределите `public override bool Equals(object? obj)` и `public override int GetHashCode()` для сравнения точек по значению.
 
 #### T3.2_Rational_Advanced (*)
