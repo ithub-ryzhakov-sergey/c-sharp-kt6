@@ -1,6 +1,6 @@
-// using App.Topics.ExplicitInterface.T2_2_MoveConflict_Advanced;
+// using App.Topics.ExplicitInterface.T2_2_MoveConflict;
 //
-// namespace App.Tests.Topics.ExplicitInterface.T2_2_MoveConflict_Advanced;
+// namespace App.Tests.Topics.ExplicitInterface.T2_2_MoveConflict;
 //
 // [Category("*")]
 // public class MoveConflictTests

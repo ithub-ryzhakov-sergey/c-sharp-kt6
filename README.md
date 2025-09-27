@@ -31,7 +31,7 @@
   7. Реализуйте **явно** метод `IXmlSerializable.Serialize`, который возвращает XML-строку. Пример: `<Report><Title>Q1</Title><Value>42</Value></Report>`.
   8. Переопределите `public override string ToString()`, чтобы он возвращал строку вида `"Report: Q1, value=42"`.
 
-#### T2.2_MoveConflict_Advanced (*)
+#### T2.2_MoveConflict
 - **Файл:** `App/Topics/ExplicitInterface/T2_2_MoveConflict_Advanced/Contracts.cs`
 - **Цель:** Разрешить конфликт имён методов из разных интерфейсов.
 - **Что нужно сделать:**
@@ -121,14 +121,3 @@
      - Другие переходы запрещены.
   4. Создайте метод `public static OrderStatus Next(OrderStatus current)`, который возвращает следующий статус в основной цепочке. Для `Delivered` и `Cancelled` бросает `InvalidOperationException`.
   5. Создайте метод `public static OrderStatus Parse(string text)`, который разбирает строку в `OrderStatus` без учёта регистра. Для `null`/пустых/неизвестных строк бросает исключения.
-
-#### T5.2_Permissions_Advanced (*)
-- **Файл:** `App/Topics/Enums/T5_2_Permissions_Advanced/Permissions.cs`
-- **Цель:** Создать утилиты для работы с `[Flags]` enum.
-- **Что нужно сделать:**
-  1. Определите `public enum Permission` с атрибутом `[Flags]`.
-     - Значения: `None = 0`, `Read = 1`, `Write = 2`, `Execute = 4`, `Delete = 8`, `Admin = 16`.
-  2. Определите `public static class PermissionUtils`.
-     - `Permission Combine(IEnumerable<string> names)`: комбинирует права из строк (регистронезависимо).
-     - `bool HasAll(Permission value, Permission flags)`: проверяет, что `value` содержит все флаги из `flags`.
-     - `Permission FromStringList(IEnumerable<string> names)`: аналог `Combine`.
