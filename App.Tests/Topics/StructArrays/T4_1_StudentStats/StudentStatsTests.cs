@@ -52,3 +52,25 @@
 //        Assert.Throws<ArgumentOutOfRangeException>(() => new Student("A", 101));
 //    }
 //}
+//         Assert.That(StudentAnalytics.AverageScore(data), Is.EqualTo((100 + 80 + 60) / 3.0));
+//         Assert.That(StudentAnalytics.MaxScore(data), Is.EqualTo(100));
+//     }
+//
+//     [Test]
+//     public void Null_Or_Empty_Handling()
+//     {
+//         Assert.Throws<ArgumentNullException>(() => StudentAnalytics.AverageScore(null!));
+//         Assert.Throws<InvalidOperationException>(() => StudentAnalytics.AverageScore(Array.Empty<Student>()));
+//         Assert.Throws<ArgumentNullException>(() => StudentAnalytics.MaxScore(null!));
+//         Assert.Throws<InvalidOperationException>(() => StudentAnalytics.MaxScore(Array.Empty<Student>()));
+//     }
+//
+//     [Test]
+//     public void Student_Ctor_Validates()
+//     {
+//         Assert.Throws<ArgumentNullException>(() => new Student(null!, 10));
+//         Assert.Throws<ArgumentException>(() => new Student("", 10));
+//         Assert.Throws<ArgumentOutOfRangeException>(() => new Student("A", -1));
+//         Assert.Throws<ArgumentOutOfRangeException>(() => new Student("A", 101));
+//     }
+// }
