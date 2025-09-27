@@ -88,7 +88,6 @@
      - `double AverageScore(Student[] students)`: считает средний балл. Бросает `ArgumentNullException` для `null` и `InvalidOperationException` для пустого массива.
      - `int MaxScore(Student[] students)`: находит максимальный балл.
      - `int CountPassed(Student[] students)`: считает студентов с баллом `>= 60`.
-     - `Student[] NormalizeScores(Student[] students)`: пересчитывает баллы в диапазон `[0, 100]`.
 
 #### T4.2_RectangleOps_Advanced (*)
 - **Файл:** `App/Topics/StructArrays/T4_2_RectangleOps_Advanced/RectangleOps.cs`
